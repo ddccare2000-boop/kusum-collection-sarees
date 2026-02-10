@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kusum Collection Sarees</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Kusum Collection</h1>
+  <p>Premium Sarees • WhatsApp Orders</p>
+</header>
+
+<!-- CATEGORY BAR -->
+<div class="categories">
+  <button onclick="filterItems('all')" class="active">All</button>
+  <button onclick="filterItems('silk')">Silk</button>
+  <button onclick="filterItems('banarasi')">Banarasi</button>
+  <button onclick="filterItems('kanjivaram')">Kanjivaram</button>
+</div>
+
+<!-- CART BUTTON -->
+<div class="cart-btn" onclick="openWhatsApp()">
+  🛒 Cart (<span id="cartCount">0</span>)
+</div>
+
+<!-- PRODUCTS -->
+<section class="products">
+
+  <div class="card silk banarasi">
+    <div class="img-box">
+      <img src="images/saree1.jpg">
+    </div>
+    <h3>Banarasi Silk Saree</h3>
+    <p>₹3499</p>
+    <button onclick="addToCart('Banarasi Silk Saree',3499)">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="card silk kanjivaram">
+    <div class="img-box">
+      <img src="images/saree2.jpg">
+    </div>
+    <h3>Kanjivaram Saree</h3>
+    <p>₹4999</p>
+    <button onclick="addToCart('Kanjivaram Saree',4999)">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="card silk">
+    <div class="img-box">
+      <img src="images/saree3.jpg">
+    </div>
+    <h3>Designer Party Saree</h3>
+    <p>₹2899</p>
+    <button onclick="addToCart('Designer Party Saree',2899)">
+      Add to Cart
+    </button>
+  </div>
+
+</section>
+
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp-float"
+   href="https://wa.me/919784620776"
+   target="_blank">💬</a>
+
+<script src="script.js"></script>
+</body>
+</html>
