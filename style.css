@@ -4,32 +4,66 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #fff4f6;
+  font-family: 'Poppins', sans-serif;
+  background: #fff6f8;
+  color: #333;
 }
 
 /* HEADER */
-header {
-  background: linear-gradient(135deg, #b11226, #ff4d6d);
-  color: white;
-  padding: 25px 15px;
+.brand-header {
+  background: linear-gradient(135deg, #7b1123, #b11226);
+  color: #fff;
   text-align: center;
+  padding: 28px 15px;
+}
+
+.brand-header h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.brand-header p {
+  opacity: 0.9;
+}
+
+/* HERO */
+.hero {
+  background: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 15px;
+  background: #b11226;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
 }
 
 /* CATEGORIES */
 .categories {
   display: flex;
-  overflow-x: auto;
   gap: 10px;
   padding: 15px;
-  background: white;
+  overflow-x: auto;
+  background: #fff;
 }
 
 .categories button {
   border: none;
-  padding: 8px 15px;
-  border-radius: 20px;
   background: #eee;
+  padding: 8px 18px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -43,27 +77,28 @@ header {
   position: fixed;
   top: 15px;
   right: 15px;
-  background: black;
+  background: #111;
   color: white;
-  padding: 10px 14px;
-  border-radius: 20px;
+  padding: 10px 16px;
+  border-radius: 25px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 999;
 }
 
 /* PRODUCTS */
 .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
 }
 
 .card {
   background: white;
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  position: relative;
   transition: transform 0.3s;
 }
 
@@ -71,7 +106,24 @@ header {
   transform: translateY(-6px);
 }
 
-/* IMAGE ZOOM */
+/* BADGES */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: gold;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.badge.new {
+  background: #ff4d6d;
+  color: white;
+}
+
+/* IMAGE */
 .img-box {
   overflow: hidden;
   border-radius: 14px;
@@ -87,24 +139,27 @@ header {
 }
 
 .card h3 {
-  margin: 12px 0 5px;
+  margin: 12px 0 4px;
+  font-weight: 500;
 }
 
-.card p {
+.price {
   font-weight: bold;
+  color: #b11226;
 }
 
+/* BUTTON */
 .card button {
   width: 100%;
   padding: 10px;
   border: none;
   background: #b11226;
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -115,5 +170,5 @@ header {
   padding: 14px 16px;
   border-radius: 50%;
   text-decoration: none;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
