@@ -2,18 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kusum Collection Sarees</title>
+  <title>Kusum Collection – Premium Sarees</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<!-- HEADER -->
+<header class="brand-header">
   <h1>Kusum Collection</h1>
-  <p>Premium Sarees • WhatsApp Orders</p>
+  <p>Elegant Indian Sarees • WhatsApp Orders</p>
 </header>
 
-<!-- CATEGORY BAR -->
+<!-- HERO -->
+<section class="hero">
+  <h2>Grace in Every Drapе</h2>
+  <p>Handpicked sarees for weddings, festivals & celebrations</p>
+  <a href="#products">Shop Now</a>
+</section>
+
+<!-- CATEGORY -->
 <div class="categories">
   <button onclick="filterItems('all')" class="active">All</button>
   <button onclick="filterItems('silk')">Silk</button>
@@ -21,34 +33,32 @@
   <button onclick="filterItems('kanjivaram')">Kanjivaram</button>
 </div>
 
-<!-- CART BUTTON -->
+<!-- CART -->
 <div class="cart-btn" onclick="openWhatsApp()">
-  🛒 Cart (<span id="cartCount">0</span>)
+  🛍 Cart (<span id="cartCount">0</span>)
 </div>
 
 <!-- PRODUCTS -->
-<section class="products">
+<section class="products" id="products">
 
   <div class="card silk banarasi">
+    <span class="badge">Bestseller</span>
     <div class="img-box">
       <img src="images/saree1.jpg">
     </div>
     <h3>Banarasi Silk Saree</h3>
-    <p>₹3499</p>
-    <button onclick="addToCart('Banarasi Silk Saree',3499)">
-      Add to Cart
-    </button>
+    <p class="price">₹3499</p>
+    <button onclick="addToCart('Banarasi Silk Saree',3499)">Add to Cart</button>
   </div>
 
   <div class="card silk kanjivaram">
+    <span class="badge new">New</span>
     <div class="img-box">
       <img src="images/saree2.jpg">
     </div>
     <h3>Kanjivaram Saree</h3>
-    <p>₹4999</p>
-    <button onclick="addToCart('Kanjivaram Saree',4999)">
-      Add to Cart
-    </button>
+    <p class="price">₹4999</p>
+    <button onclick="addToCart('Kanjivaram Saree',4999)">Add to Cart</button>
   </div>
 
   <div class="card silk">
@@ -56,15 +66,13 @@
       <img src="images/saree3.jpg">
     </div>
     <h3>Designer Party Saree</h3>
-    <p>₹2899</p>
-    <button onclick="addToCart('Designer Party Saree',2899)">
-      Add to Cart
-    </button>
+    <p class="price">₹2899</p>
+    <button onclick="addToCart('Designer Party Saree',2899)">Add to Cart</button>
   </div>
 
 </section>
 
-<!-- FLOATING WHATSAPP -->
+<!-- WHATSAPP FLOAT -->
 <a class="whatsapp-float"
    href="https://wa.me/919784620776"
    target="_blank">💬</a>
